@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Art Commissions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Commission Portfolio <br>By Cherry Vali</h1>
+        <p>รวมผลงานคอมมิชชั่นที่ผ่านมา</p>
+    </header>
+
+    <!-- ส่วนแสดงรูปภาพผลงาน -->
+    <main class="gallery">
+        <!-- เปลี่ยน URL ตรง src และ onclick ให้เป็นรูปของคุณ -->
+        <div class="gallery-item">
+            <img src="images/p1.jpg" alt="Artwork 1" onclick="openModal(this.src)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/p2.jpg" alt="Artwork 2" onclick="openModal(this.src)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/p3.jpg" alt="Artwork 3" onclick="openModal(this.src)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/p4.jpg" alt="Artwork 4" onclick="openModal(this.src)">
+        </div>
+    </main>
+
+    <!-- หน้าต่างป็อปอัปสำหรับขยายรูป (Lightbox) -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close-btn">&times;</span>
+        <img class="modal-content" id="expandedImg">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
